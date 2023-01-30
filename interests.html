@@ -17,7 +17,7 @@
                 <div class="col-md-8">
                     <div class="row no-gutters bg-color-name-title">
                         <div class="col heading">
-                            <h1 class="name">Killol Sevak</h1>
+                            <h1 class="name">Killol Sevak </h1>
                             <h2 class="title">Sevak Construction LTD</h2>
                         </div>
                     </div>
@@ -34,6 +34,12 @@
                                 <li class="col-6 col-sm-3 list-inline-item ui-menu-color-contact menuitem">
                                     <a href="contact.html" class="hvr-shutter-out-vertical"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
                                 </li>
+                                <li class="col-xs-6 col-sm-3 list-inline-item ui-menu-color-interests menuitem">
+                                    <a href="interests.html" class="hvr-shutter-out-vertical"><i class="fa fa-users" aria-hidden="true"></i><span>Interests</span></a>
+                                </li>
+                                <li class="col-xs-6 col-sm-3 list-inline-item ui-menu-color-github menuitem">
+                                    <a href="github.html" class="hvr-shutter-out-vertical"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+                                </li>
                                 <li class="col-6 col-sm-3 list-inline-item ui-menu-color-download menuitem">
                                     <a href="cv/C V Killol coding.pdf"  target="_blank" class="hvr-shutter-out-vertical"><i class="fa fa-download" aria-hidden="true"></i><span>Download CV</span></a>
                                 </li>
@@ -45,72 +51,17 @@
         </header>
         <section class="container-fluid">
             <div class="row">
-                <div class="col-md-4 bg-color-personal-info section-column">
+                <div class="col-md-4 bg-color-conferences section-column">
                     <div class="row">
                         <div class="col-12">
                             <h3 class="section-heading uppercase">
-                                Personal Info
+                                Conferences And Meetups Attended
                             </h3>
                         </div>
                     </div>
-                    <div class="personal-info-item">
-                        <div class="key">
-                            <p class="uppercase">
-                                Name:
-                            </p>
-                        </div>
-                        <div class="value">
-                            <p>
-                                Killol Sevak
-                            </p>
-                        </div>
-                    </div>
-                    <div class="personal-info-item">
-                        <div class="key">
-                            <p class="uppercase">
-                                Address:
-                            </p>
-                        </div>
-                        <div class="value">
-                            <p>
-                                125 Kings road,
-                                Kingstaning,
-                                Westmidland,
-                                Birmingham B44 0SE
-                            </p>
-                        </div>
-                    </div>
-                    <div class="personal-info-item">
-                        <div class="key">
-                            <p class="uppercase">
-                                Phone:
-                            </p>
-                        </div>
-                        <div class="value">
-                            <p>
-                                07904945287
-                            </p>
-                        </div>
-                    </div>
-                    <div class="personal-info-item">
-                        <div class="key">
-                            <p class="uppercase">
-                                Email:
-                            </p>
-                        </div>
-                        <div class="value">
-                            <p>
-                                killolsluck@gmail.com
-                            </p>
-                        </div>
-                    </div>
-                    <div id = "map">
-                        <h3 class="section-heading uppercase">
-                            Conferences And Meetups Attended
-                        </h3>
-                    </div>
+                    <div id="map"></div>
                 </div>
-                <div class="col-md-8 bg-color-three-reasons section-column">
+                <div class="col-md-8 bg-color-groups">
                     <div class="row">
                         <div class="col">
                             <h3 class="section-heading uppercase">About Me</h3>
@@ -217,5 +168,25 @@
                 </div>
             </div>
         </footer>
+
+        <script>
+            function initMap() {
+                var map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 3,
+                    center: {
+                        lat: 46.619261,
+                        lng: -33.134766
+                    }
+                });
+            }
+        </script>
+
+
+
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script async
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALfCicpSGvjCx_sUpmHYbM8b2ppj5A7cI&callback=initMap">
+</script>
+        <script src="assets/js/maps.js"></script>
     </body>
     </html>
