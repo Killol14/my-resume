@@ -24,23 +24,22 @@
                     <div class="row no-gutters">
                         <div class="col">
                             <ul id="nav" class="list-inline menucontainer">
-                            
-                                <li class="col-6 col-sm-3 list-inline-item ui-menu-color-home menuitem">
+                                <li class="col-6 col-sm-2 list-inline-item ui-menu-color-home menuitem">
                                     <a href="index.html" class="hvr-shutter-out-vertical"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
                                 </li>
-                                <li class="col-6 col-sm-3 list-inline-item ui-menu-color-resume menuitem">
+                                <li class="col-6 col-sm-2 list-inline-item ui-menu-color-resume menuitem">
                                     <a href="resume.html" class="hvr-shutter-out-vertical"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
                                 </li>
-                                <li class="col-6 col-sm-3 list-inline-item ui-menu-color-contact menuitem">
+                                <li class="col-6 col-sm-2 list-inline-item ui-menu-color-contact menuitem">
                                     <a href="contact.html" class="hvr-shutter-out-vertical"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
                                 </li>
-                                <li class="col-xs-6 col-sm-3 list-inline-item ui-menu-color-interests menuitem">
+                                <li class="col-xs-6 col-sm-2 list-inline-item ui-menu-color-interests menuitem">
                                     <a href="interests.html" class="hvr-shutter-out-vertical"><i class="fa fa-users" aria-hidden="true"></i><span>Interests</span></a>
                                 </li>
-                                <li class="col-xs-6 col-sm-3 list-inline-item ui-menu-color-github menuitem">
+                                <li class="col-xs-6 col-sm-2 list-inline-item ui-menu-color-github menuitem">
                                     <a href="github.html" class="hvr-shutter-out-vertical"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a>
                                 </li>
-                                <li class="col-6 col-sm-3 list-inline-item ui-menu-color-download menuitem">
+                                <li class="col-6 col-sm-2 list-inline-item ui-menu-color-download menuitem">
                                     <a href="cv/C V Killol coding.pdf"  target="_blank" class="hvr-shutter-out-vertical"><i class="fa fa-download" aria-hidden="true"></i><span>Download CV</span></a>
                                 </li>
                             </ul>
@@ -178,14 +177,21 @@
                         lng: -33.134766
                     }
                 });
+
+                var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+                var locations = [
+                    { lat: -31.56391, lng: 147.154312 },
+                    { lat: -33.718234, lng: 150.363181 },
+                    { lat: -33.727111, lng: 150.371124 },
+               ];
+               var markerclusterer = new Markerclusterer(map, markers,
+               {imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer/m"});
             }
         </script>
 
-
-
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-<script async
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALfCicpSGvjCx_sUpmHYbM8b2ppj5A7cI&callback=initMap">
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWUdN2nCvMlx_IQlH9SgAH56yJC3kkBp0&callback=initMap">
 </script>
         <script src="assets/js/maps.js"></script>
     </body>
